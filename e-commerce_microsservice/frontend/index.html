@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2>🛒 E-commerce</h2>
+    <p>Microsserviços</p>
+  </aside>
+
+  <main class="content">
+
+    <h1>Painel</h1>
+
+    <!-- FORMULÁRIOS -->
+    <section class="forms">
+
+      <div class="form-card">
+        <h3>👤 Criar Usuário</h3>
+        <input id="name" placeholder="Nome">
+        <input id="email" placeholder="Email">
+        <button onclick="createUser()">Salvar Usuário</button>
+      </div>
+
+      <div class="form-card">
+        <h3>📦 Criar Produto</h3>
+        <input id="productName" placeholder="Nome do produto">
+        <input id="price" placeholder="Preço">
+        <button onclick="createProduct()">Salvar Produto</button>
+      </div>
+
+      <div class="form-card">
+        <h3>🧾 Criar Pedido</h3>
+        <input id="userId" placeholder="User ID">
+        <input id="productId" placeholder="Product ID">
+        <input id="quantity" placeholder="Quantidade">
+        <button onclick="createOrder()">Salvar Pedido</button>
+      </div>
+
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section>
+      <h2>📦 Catálogo de Produtos</h2>
+      <div id="productList" class="product-list"></div>
+    </section>
+
+    <!-- RESPOSTA -->
+    <section class="response-box">
+      <h3>📊 Resposta</h3>
+      <pre id="response"></pre>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
